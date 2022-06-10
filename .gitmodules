@@ -1,0 +1,27 @@
+[submodule "dot-vim/bundle/nerdtree"]
+	path = dot-vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "dot-vim/bundle/nvim-yarp"]
+	path = dot-vim/bundle/nvim-yarp
+	url = https://github.com/roxma/nvim-yarp.git
+[submodule "dot-vim/bundle/rust.vim"]
+	path = dot-vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule "dot-vim/bundle/vim-buftabline"]
+	path = dot-vim/bundle/vim-buftabline
+	url = https://github.com/ap/vim-buftabline.git
+[submodule "dot-vim/bundle/vim-repl"]
+	path = dot-vim/bundle/vim-repl
+	url = git@github.com:sillybun/vim-repl.git
+[submodule "dot-vim/bundle/vim-solidity"]
+	path = dot-vim/bundle/vim-solidity
+	url = https://github.com/tomlion/vim-solidity.git
+[submodule "dot-vim/bundle/vim-yaml-folds"]
+	path = dot-vim/bundle/vim-yaml-folds
+	url = https://github.com/pedrohdz/vim-yaml-folds.git
+[submodule "dot-vim/vimspeak"]
+	path = dot-vim/vimspeak
+	url = https://git.sr.ht/~sircmpwn/vimspeak
+[submodule "dot-vim/bundle/vimwiki"]
+	path = dot-vim/bundle/vimwiki
+	url = https://github.com/vimwiki/vimwiki

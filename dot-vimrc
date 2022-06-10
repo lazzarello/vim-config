@@ -1,0 +1,44 @@
+" show line numbers
+set number
+" expand tabs into spaces
+set expandtab
+" a tab is 2 spaces when using the shift (>><<) options
+" should be the same as softtabstop
+set shiftwidth=2
+" like tabstop but for computers not typewriters
+set softtabstop=2
+" This font is for a mono font on most Linux
+set guifont="FreeMono Regular:h10"
+" enable syntax hilighting for all known languages
+syntax on
+" help terminal vim undetstand copy + paste
+set paste
+" use same clipboard as OS
+set clipboard=unnamedplus
+" ???
+filetype plugin indent on
+" enable this colorscheme, definied in the .vim/colors/
+colorscheme oceanic-eighties 
+" ???
+set omnifunc=rubycomplete#Complete
+" some ruby shit from a while ago. candidate to disable.
+" ensure buffers are not deleted when abandoned
+set hidden
+" bind crtl + N to move to next buffer
+nnoremap <C-N> :bnext<CR>
+" bind crtl + P to move to previous buffer
+nnoremap <C-P> :bprev<CR>
+
+let g:rubycomplete_buffer_loading=1
+let g:rubycomplete_classes_in_global=1
+" This beauty remembers where you were the last time you edited the file, and returns to the same position.
+" Cargo culting copypasta but quite useful
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+" enable the Pathogen package manager
+execute pathogen#infect()
+" start all sessions with NERDTree in current dir
+autocmd VimEnter * NERDTree .
+" make the c key in edit mode go to the previous buffer before deleting the previous one
+nnoremap c :bp\|bd #<CR>
+let g:vimspeak_speed="-s 150"
+let g:vimspeak_punct="-v mb-en1"
